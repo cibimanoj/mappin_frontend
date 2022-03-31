@@ -7,6 +7,7 @@ import { format } from "timeago.js";
 import Register from "./components/Register";
 import Login from "./components/Login";
 
+
 function App() {
   const MAPTOKEN= process.env.REACT_APP_API_KEY;
   const myStorage = window.localStorage;
@@ -83,7 +84,7 @@ function App() {
         width="100%"
         height="100%"
         transitionDuration="200"
-        mapStyle="mapbox://styles/safak/cknndpyfq268f17p53nmpwira"
+        mapStyle="mapbox://styles/cibimanoj/cl1eksluz005d15myzte9hv6q"
         onViewportChange={(viewport) => setViewport(viewport)}
         onDblClick={currentUsername && handleAddClick}
       >
@@ -118,7 +119,7 @@ function App() {
                 <div className="card">
                   <label>Place</label>
                   <h4 className="place">{p.title}</h4>
-                  <label>Review</label>
+                  <label>Description</label>
                   <p className="desc">{p.desc}</p>
                   <label>Rating</label>
                   <div className="stars">
